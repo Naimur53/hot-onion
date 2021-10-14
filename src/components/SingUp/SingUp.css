@@ -1,0 +1,5 @@
+.bg-logo{
+    height: 100vh;
+    background: url('../../images/bannerbackground.png');
+    background-position: center;
+}
