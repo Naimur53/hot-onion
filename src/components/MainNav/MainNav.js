@@ -2,10 +2,10 @@ import React from 'react';
 import logo2 from '../../images/logo2.png'
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import './MainNav.css'
-import useFirebase from '../../hooks/useFirebase';
 import { HashLink } from 'react-router-hash-link';
+import useAuth from '../../hooks/useAuth.';
 const MainNav = () => {
-    const { user, handleSignOut } = useFirebase();
+    const { user, handleSignOut } = useAuth();
 
     console.log(user, 'main');
 

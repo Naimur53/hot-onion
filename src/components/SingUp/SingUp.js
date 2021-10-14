@@ -2,12 +2,12 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import './SingUp.css'
 import logo2 from '../../images/logo2.png'
-import useFirebase from '../../hooks/useFirebase';
 import { Nav } from 'react-bootstrap';
 import { HashLink } from 'react-router-hash-link';
+import useAuth from '../../hooks/useAuth.';
 
 const SingUp = () => {
-    const { user, googleSignIn, signUpWithEmail } = useFirebase();
+    const { user, googleSignIn, signUpWithEmail } = useAuth();
     console.log(user, 'up');
     const { register, formState: { errors }, watch, handleSubmit, } = useForm();
     const onSubmit = e => {

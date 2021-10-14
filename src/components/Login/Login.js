@@ -2,16 +2,13 @@ import React from 'react';
 import { useForm } from 'react-hook-form';
 import "./Login.css";
 import logo2 from '../../images/logo2.png';
-import useFirebase from '../../hooks/useFirebase';
+import useAuth from '../../hooks/useAuth.';
 
 const Login = () => {
-    const { logInWithEmail } = useFirebase();
+    const { logInWithEmail } = useAuth();
     const onSubmit = e => {
-        console.log(e);
         logInWithEmail(e);
     }
-
-
     const { register, formState: { errors }, watch, handleSubmit, } = useForm();
     return (
         <div className='login d-flex    flex-column align-items-center'>
