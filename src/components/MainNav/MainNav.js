@@ -3,13 +3,14 @@ import logo2 from '../../images/logo2.png'
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import './MainNav.css'
 import useFirebase from '../../hooks/useFirebase';
+import { HashLink } from 'react-router-hash-link';
 const MainNav = () => {
     const { user, handleSignOut } = useFirebase();
 
     console.log(user, 'main');
 
     return (
-        <Navbar bg="transparent" fixed='top' expand="lg">
+        <Navbar bg="white" sticky='top' expand="lg">
             <Container>
                 <Navbar.Brand href="#"><img className='logo2' src={logo2} alt="logo" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -23,12 +24,12 @@ const MainNav = () => {
                         {
                             user.email
                                 ?
-                                <button className='btn  fw-bold' onClick={handleSignOut}>Log Out</button> : <Nav.Link >Login</Nav.Link>
+                                <button className='btn  fw-bold' onClick={handleSignOut}>Log Out</button> : <Nav.Link as={HashLink} to='/login'>Login</Nav.Link>
                         }
                         {
                             !user.email
                             &&
-                            <Nav.Link>Sign Up</Nav.Link>
+                            <Nav.Link as={HashLink} to='/signup'>Sign Up</Nav.Link>
                         }
 
                         {

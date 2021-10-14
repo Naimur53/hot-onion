@@ -3,17 +3,19 @@ import { useForm } from 'react-hook-form';
 import './SingUp.css'
 import logo2 from '../../images/logo2.png'
 import useFirebase from '../../hooks/useFirebase';
+import { Nav } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 
 const SingUp = () => {
-    const { user, googleSignIn, signInWithEmail } = useFirebase();
+    const { user, googleSignIn, signUpWithEmail } = useFirebase();
     console.log(user, 'up');
     const { register, formState: { errors }, watch, handleSubmit, } = useForm();
     const onSubmit = e => {
-        signInWithEmail(e);
+        signUpWithEmail(e);
     }
     return (
         <div className='container-fluid d-flex justify-content-center flex-column align-items-center bg-logo'>
-            <img className='w-25 mb-5' src={logo2} alt="" />
+            <img className='w-25 mb-4' src={logo2} alt="" />
             <form className='w-25' onSubmit={handleSubmit(onSubmit)}>
                 <input className='ps-2 py-2 bg-light border-0 w-100' type='text' placeholder='Name' {...register("name", { required: true })} />
                 {errors.name && <span className='text-danger  '>This field is required</span>}
@@ -39,7 +41,7 @@ const SingUp = () => {
             <div className='text-center mt-4'>
                 <button onClick={googleSignIn} className="text-danger outline-0 btn btn-transparent">Sign in with google</button>
                 <br />
-                <span className="text-danger ">already have a account?</span>
+                <Nav.Link as={HashLink} to="/login" className="text-danger btn ">already have a account?</Nav.Link>
 
             </div>
         </div>

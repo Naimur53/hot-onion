@@ -6,7 +6,6 @@ initializeAppAuthetication();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
-    // const [info, setInfo] = useState('');
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
@@ -22,8 +21,8 @@ const useFirebase = () => {
                 console.log(error.message);
             })
     };
-    const signInWithEmail = (info) => {
-        const { name, email, password } = info;
+    const signUpWithEmail = (info) => {
+        const { email, password } = info;
         createUserWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
                 // Signed in 
@@ -33,6 +32,20 @@ const useFirebase = () => {
             }).catch(error => {
                 console.log(error.message);
             })
+    };
+    const logInWithEmail = info => {
+        const { email, password } = info;
+        signInWithEmailAndPassword(auth, email, password)
+            .then((userCredential) => {
+                // Signed in 
+                const user = userCredential.user;
+                setUser(user);
+                // ...
+            })
+            .catch((error) => {
+                const errorMessage = error.message;
+                console.log(errorMessage);
+            });
     }
     useEffect(() => {
         onAuthStateChanged(auth, (user) => {
@@ -56,7 +69,8 @@ const useFirebase = () => {
         user,
         handleSignOut,
         googleSignIn,
-        signInWithEmail
+        signUpWithEmail,
+        logInWithEmail
     };
 };
 
