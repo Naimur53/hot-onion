@@ -10,7 +10,7 @@ const MainNav = () => {
     console.log(user, 'main');
 
     return (
-        <Navbar bg="white" sticky='top' expand="lg">
+        <Navbar bg="white" fixed='top' expand="lg">
             <Container>
                 <Navbar.Brand href="#"><img className='logo2' src={logo2} alt="logo" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />

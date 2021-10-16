@@ -1,0 +1,22 @@
+.bg-header{
+    height: 90vh;
+    background: url('../../images/bannerbackground.png');
+    background-position: center;
+}
+
+.header-btn{
+    left: -60px; 
+    z-index: 99!important;
+}
+.header-input:focus{
+    box-shadow: inherit !important;
+
+}
+.unselect:hover{ 
+    color: black;
+}
+.unselect{
+    border-bottom: 2px solid transparent;
+    transition: .3s;
+    color: black;
+}

@@ -1,0 +1,146 @@
+[
+    {
+        "id": 1,
+        "name": "Begel and cream cheese ",
+        "price": 25,
+        "rating": 5,
+        "img": "https://i.ibb.co/M7dxKmJ/breakfast1.png",
+        "description": "Fresh and good for health"
+    },
+    {
+        "id": 2,
+        "name": "BreakFast sandwich",
+        "price": 120,
+        "rating": 5,
+        "img": "https://i.ibb.co/n3f1WYk/breakfast2.png",
+        "description": "Awesome sandwich for breakfast"
+    },
+    {
+        "id": 3,
+        "name": "Baked Chicken",
+        "price": 70.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/XWxmr39/breakfast3.png",
+        "description": "Start your morning with chicken"
+    },
+    {
+        "id": 4,
+        "name": "Eggs Benedict",
+        "price": 39.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/7yV4DwQ/breakfast4.png",
+        "description": "Healthy food for morning"
+    },
+    {
+        "id": 5,
+        "name": "Toast Croissant Fired egg",
+        "price": 85.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/bXJDQRT/breakfast5.png",
+        "description": "Egg is the best food to start with"
+    },
+    {
+        "id": 6,
+        "name": "Full Breakfast Fired Egg toast Brunch",
+        "price": 189.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/QNxXLcX/breakfast6.png",
+        "description": "Best food for breakfast"
+    },
+    {
+        "id": 7,
+        "name": "Healthy Meal Plan",
+        "price": 89.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/3YfQGQF/lunch1.png",
+        "description": "Start eating healty food "
+    },
+    {
+        "id": 8,
+        "name": "Fried Chicken Bento",
+        "price": 9.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/0QXByHw/lunch2.png",
+        "description": "Eat fried chicken is good for muscles"
+    },
+    {
+        "id": 9,
+        "name": "Tarragon Rubbed Salmon",
+        "price": 7.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/RyVXbDM/lunch3.png",
+        "description": "Awesome food for lunch"
+    },
+    {
+        "id": 10,
+        "name": "Indian Lunch",
+        "price": 4.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/h9FmqVM/lunch4.png",
+        "description": "Indian food is just minblowing "
+    },
+    {
+        "id": 11,
+        "name": "Beef Steak",
+        "price": 399.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/JqTtbjR/lunch5.png",
+        "description": "Beef is so delicious"
+    },
+    {
+        "id": 12,
+        "name": "Honey Soy Glazed Salmon with Peppers",
+        "price": 299,
+        "rating": 5,
+        "img": "https://i.ibb.co/PTPKhpt/lunch6.png",
+        "description": "Just try it out then judge"
+    },
+    {
+        "id": 13,
+        "name": "Salmon with Grapefruit and Lentil Salad",
+        "price": 9.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/4FRhYCP/dinner1.png",
+        "description": "Best for dinner"
+    },
+    {
+        "id": 14,
+        "name": "Lemony Salmon Piccata",
+        "price": 7.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/JmhW2TD/dinner2.png",
+        "description": "Fish is good for dinner "
+    },
+    {
+        "id": 15,
+        "name": "Tenderloin With Quinoa Pilaf",
+        "price": 10.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/H4637z7/dinner3.png",
+        "description": "Mindblowing food for night food "
+    },
+    {
+        "id": 16,
+        "name": "French fries with cheese",
+        "price": 85.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/cb8xS5G/dinner4.png",
+        "description": "Delicious food for lunch "
+    },
+    {
+        "id": 17,
+        "name": "Garlic Butter Baked Salmon",
+        "price": 3.99,
+        "rating": 5,
+        "img": "https://i.ibb.co/9srKkFY/dinner5.png",
+        "description": "Garlic is so delicious"
+    },
+    {
+        "id": 18,
+        "name": "Baked Chicken",
+        "price": 0,
+        "rating": 5,
+        "img": "https://i.ibb.co/wJ8wBwp/dinner6.png",
+        "description": " Chicken is always good for healt"
+    }
+]
