@@ -1,14 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo2 from '../../images/logo2.png'
 import { Navbar, Container, Nav } from 'react-bootstrap';
 import './MainNav.css'
 import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../hooks/useAuth.';
+import { getStoredCart } from '../../utilities/fakeDb';
 const MainNav = () => {
     const { user, handleSignOut } = useAuth();
+    const [totalCart, setTotalCart] = useState(0);
+    console.log(totalCart);
+    const cart = getStoredCart();
 
-    console.log(user, 'main');
+    useEffect(() => {
+        const allKeys = Object.keys(cart);
+        console.log(allKeys);
+        setTotalCart(allKeys.length);
 
+    }, [])
     return (
         <Navbar bg="white" fixed='top' expand="lg">
             <Container>
@@ -20,7 +28,7 @@ const MainNav = () => {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link><span ><i className="fas fa-shopping-cart"></i> <sup className='text-danger fw-bold'>0</sup></span></Nav.Link>
+                        <Nav.Link><span ><i className="fas fa-shopping-cart"></i> <sup className='text-danger fw-bold'>{totalCart}</sup></span></Nav.Link>
                         {
                             user.email
                                 ?

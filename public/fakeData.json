@@ -1,38 +1,38 @@
 [
     {
-        "id": 1,
+        "id": "01d99836-3430-4efa-8d41-bda743cb27a8",
         "name": "Begel and cream cheese ",
         "price": 25,
         "rating": 5,
         "img": "https://i.ibb.co/M7dxKmJ/breakfast1.png",
-        "description": "Fresh and good for health"
+        "description": "Shake chicken pieces, 1 - 2 piece at a time, in mixture. Place coated chicken on an ungreased baking sheet. Bake chicken in a 400 degree oven until juices run clear, about 20 minutes for boneless chicken and 45 minutes for b2ne-in chicken"
     },
     {
-        "id": 2,
+        "id": "d5c686b0-25ba-463d-838f-2e0880d63015",
         "name": "BreakFast sandwich",
         "price": 120,
         "rating": 5,
         "img": "https://i.ibb.co/n3f1WYk/breakfast2.png",
-        "description": "Awesome sandwich for breakfast"
+        "description": "The basic bagel with cream cheese serves as the base for other items such as the \"lox and schmear\", a staple of delicatessens in the New York City area and across the U.S. While non-Jewish ingredients take well to bagel sandwiches, such as eggs and breakfast meats, cold cuts and sliced cheese, several traditional "
     },
     {
-        "id": 3,
+        "id": "0f685969-8bc7-4be0-be96-4d2181723f70",
         "name": "Baked Chicken",
         "price": 70.99,
         "rating": 5,
         "img": "https://i.ibb.co/XWxmr39/breakfast3.png",
-        "description": "Start your morning with chicken"
+        "description": "Cooking can be dangerous (especially if you’re a fan of flambé!). While the risks are relatively low when you’re creating a meal in your kitchen, baking chicken or cooking any poultry always comes with the potential for foodborne illness"
     },
     {
-        "id": 4,
+        "id": "ad16ef96-8679-411d-948f-d634bef824b9",
         "name": "Eggs Benedict",
         "price": 39.99,
         "rating": 5,
         "img": "https://i.ibb.co/7yV4DwQ/breakfast4.png",
-        "description": "Healthy food for morning"
+        "description": "Eggs Benedict is a common American breakfast or brunch dish, consisting of two halves of an English muffin, each topped with Canadian bacon, a poached egg, and hollandaise sauce. It was popularized in New York City"
     },
     {
-        "id": 5,
+        "id": "66d868b5-6d04-4b1e-b16f-132f7f127864",
         "name": "Toast Croissant Fired egg",
         "price": 85.99,
         "rating": 5,
@@ -40,7 +40,7 @@
         "description": "Egg is the best food to start with"
     },
     {
-        "id": 6,
+        "id": "e09abca7-998c-4f4c-9406-445a280b53fa",
         "name": "Full Breakfast Fired Egg toast Brunch",
         "price": 189.99,
         "rating": 5,
@@ -48,99 +48,99 @@
         "description": "Best food for breakfast"
     },
     {
-        "id": 7,
+        "id": "da7a77c6-4331-4236-ae0e-a2a3b2714c97",
         "name": "Healthy Meal Plan",
         "price": 89.99,
         "rating": 5,
         "img": "https://i.ibb.co/3YfQGQF/lunch1.png",
-        "description": "Start eating healty food "
+        "description": "A full breakfast is a substantial cooked breakfast meal, often served in the United Kingdom and Ireland, that typically includes bacon, sausages, eggs, black pudding, baked beans, tomatoes, mushrooms, toast, and a beverage such as coffee or tea. It appears in different regional variants and is referred to by different names depending on the area. While it is colloquially known as a \"fry up\" in most areas of Great Britain and Ireland,"
     },
     {
-        "id": 8,
+        "id": "266a31e9-ae6e-4293-baf2-32962e532bbc",
         "name": "Fried Chicken Bento",
         "price": 9.99,
         "rating": 5,
         "img": "https://i.ibb.co/0QXByHw/lunch2.png",
-        "description": "Eat fried chicken is good for muscles"
+        "description": "Cut chicken thigh to bite-size pieces and put in a plastic bag. Combine curry powder, sugar, grated garlic, grated ginger, soy sauce, and sake, and rub well. Marinate for 1 hour in the fridge"
     },
     {
-        "id": 9,
+        "id": "bc8a728b-f0fb-406b-88c1-37defbfcc17c",
         "name": "Tarragon Rubbed Salmon",
         "price": 7.99,
         "rating": 5,
         "img": "https://i.ibb.co/RyVXbDM/lunch3.png",
-        "description": "Awesome food for lunch"
+        "description": "Place salmon on hot grill grate. Cover grill and cook salmon 8 to 10 minutes or until it turns opaque throughout, turning over once with large spatula. Transfer to platter"
     },
     {
-        "id": 10,
+        "id": "70de0fa8-c92b-4edc-b56a-25aea3436fef",
         "name": "Indian Lunch",
         "price": 4.99,
         "rating": 5,
         "img": "https://i.ibb.co/h9FmqVM/lunch4.png",
-        "description": "Indian food is just minblowing "
+        "description": "The core of a typical Indian dinner (or lunch) is rice, or a flatbread, and or a lentil stew (dal). There will also be a vegetarian stew, and if non-vegetarian, a meat, chicken, or seafood curry. A pickle (achar), papad a thin round “chip” made from chickpea flour and spices "
     },
     {
-        "id": 11,
+        "id": "92b306aa-db2b-4c0c-b94e-7e207dfb4202",
         "name": "Beef Steak",
         "price": 399.99,
         "rating": 5,
         "img": "https://i.ibb.co/JqTtbjR/lunch5.png",
-        "description": "Beef is so delicious"
+        "description": "A beefsteak, often called just steak, is a flat cut of beef with parallel faces, usually cut perpendicular to the muscle fibers. In common restaurant service a single serving has a raw mass ranging from 120 to 600 grams. Beef steaks are usually grilled, pan-fried, or broiled"
     },
     {
-        "id": 12,
+        "id": "786a26cd-c4ab-407d-89d5-f755417c9527",
         "name": "Honey Soy Glazed Salmon with Peppers",
         "price": 299,
         "rating": 5,
         "img": "https://i.ibb.co/PTPKhpt/lunch6.png",
-        "description": "Just try it out then judge"
+        "description": "Two words honey salmon! Sure, it takes a tiny bit of prep work, but once you marinate your salmon, you won’t be able to go back. A simple mix of honey, soy sauce, garlic, and ginger coats and flavors your fish for 30 minutes before you throw it on the pan until the outside is perfectly crispy. Once that’s done, you heat up and reduce some extra marinade to make a thick, to-die-for glaze to pour over your filet. Serve with your favorite veggies or rice and enjoy!"
     },
     {
-        "id": 13,
+        "id": "5125e7dc-57b6-44c5-8f99-4255bafe7472",
         "name": "Salmon with Grapefruit and Lentil Salad",
         "price": 9.99,
         "rating": 5,
         "img": "https://i.ibb.co/4FRhYCP/dinner1.png",
-        "description": "Best for dinner"
+        "description": "Meanwhile, in a large bowl, whisk together vinegar and remaining Tbsp oil. Add lentils and toss to coat and ginger coats and flavors your fish for 30 minutes before you throw it on the pan until the outside is perfectly crispy. Once that’s done, you heat up and reduce some extra marinade to make a thick"
     },
     {
-        "id": 14,
+        "id": "3e3a34ae-df28-404c-bfb1-442bf1fc893f",
         "name": "Lemony Salmon Piccata",
         "price": 7.99,
         "rating": 5,
         "img": "https://i.ibb.co/JmhW2TD/dinner2.png",
-        "description": "Fish is good for dinner "
+        "description": "Have I mentioned before how much I love food? How much I love eating exquisite good food? Cue this salmon. Anything Piccata sounds so refined and way too complicated to cook, but this Salmon Piccata recipe is easy, gourmet cooking in minutes"
     },
     {
-        "id": 15,
+        "id": "90954106-7afc-44f8-90f0-5a8511be2c55",
         "name": "Tenderloin With Quinoa Pilaf",
         "price": 10.99,
         "rating": 5,
         "img": "https://i.ibb.co/H4637z7/dinner3.png",
-        "description": "Mindblowing food for night food "
+        "description": "While quinoa cooks, heat a skillet on medium. Add remaining Tbsp oil, season pork with ½ tsp each salt and pepper, and cook until browned on all sides and an instant-read thermometer registers 145°F, 12 to 14 minutes.  "
     },
     {
-        "id": 16,
+        "id": "f78caf68-a97d-4f57-9280-dc7b709ac583",
         "name": "French fries with cheese",
         "price": 85.99,
         "rating": 5,
         "img": "https://i.ibb.co/cb8xS5G/dinner4.png",
-        "description": "Delicious food for lunch "
+        "description": "Cheese fries or cheesy chips is a dish consisting of French fries covered in cheese, with the possible addition of various other toppings. Cheese fries are generally served as a lunch- or dinner-time meal. They can be found in fast-food locations, diners, and grills around the globe"
     },
     {
-        "id": 17,
+        "id": "5f97d4ae-a1c6-47d4-80d0-b51f1ad9a4fb",
         "name": "Garlic Butter Baked Salmon",
         "price": 3.99,
         "rating": 5,
         "img": "https://i.ibb.co/9srKkFY/dinner5.png",
-        "description": "Garlic is so delicious"
+        "description": "THE salmon recipe of your dreams! A complete meal on one pan full of flavour. Garlic Butter Baked Salmon is easy to make using minimal ingredients you already have in your kitchen! PLUS the bonus of having only one pan to wash and no mess in your kitchen to clean up when your done"
     },
     {
-        "id": 18,
+        "id": "0d5e31b9-36ba-4f61-a0f7-d5163321200f",
         "name": "Baked Chicken",
         "price": 0,
         "rating": 5,
         "img": "https://i.ibb.co/wJ8wBwp/dinner6.png",
-        "description": " Chicken is always good for healt"
+        "description": " Shake chicken pieces, 1 - 2 piece at a time, in mixture. Place coated chicken on an ungreased baking sheet. Bake chicken in a 400 degree oven until juices run clear, about 20 minutes for boneless chicken and 45 minutes for bone-in chicken"
     }
 ]
