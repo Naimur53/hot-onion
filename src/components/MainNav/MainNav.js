@@ -6,19 +6,18 @@ import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../hooks/useAuth.';
 import { getStoredCart } from '../../utilities/fakeDb';
 const MainNav = () => {
-    const { user, handleSignOut } = useAuth();
+    const { user, handleSignOut, updateCart } = useAuth();
     const [totalCart, setTotalCart] = useState(0);
-    console.log(totalCart);
-    const cart = getStoredCart();
+
 
     useEffect(() => {
+        const cart = getStoredCart();
         const allKeys = Object.keys(cart);
-        console.log(allKeys);
         setTotalCart(allKeys.length);
 
-    }, [])
+    }, [updateCart])
     return (
-        <Navbar bg="white" fixed='top' expand="lg">
+        <Navbar className="shadow-sm" bg="white" fixed='top' expand="lg">
             <Container>
                 <Navbar.Brand href="#"><img className='logo2' src={logo2} alt="logo" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="navbarScroll" />
@@ -28,7 +27,10 @@ const MainNav = () => {
                         style={{ maxHeight: '100px' }}
                         navbarScroll
                     >
-                        <Nav.Link><span ><i className="fas fa-shopping-cart"></i> <sup className='text-danger fw-bold'>{totalCart}</sup></span></Nav.Link>
+                        <Nav.Link as={HashLink} to='/checkout'><span ><i className="fas fa-shopping-cart"></i> <sup className='text-danger fw-bold'>{totalCart}</sup></span>
+                        </Nav.Link>
+
+                        <Nav.Link as={HashLink} to='/'>Home</Nav.Link>
                         {
                             user.email
                                 ?

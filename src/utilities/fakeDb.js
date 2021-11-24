@@ -1,20 +1,30 @@
 // use local storage as your db for now
-const addToDb = (id, value) => {
+const addToDb = (data, value) => {
     const exists = getDb();
-    let shopping_cart = {};
+    data["quantity"] = value;
+    let shopping_cart = [];
     if (!exists) {
-        shopping_cart[id] = value;
+        console.log('his');
+        shopping_cart.push(data);
+        console.log(shopping_cart);
     }
     else {
         shopping_cart = JSON.parse(exists);
-        if (shopping_cart[id]) {
-            shopping_cart[id] = value;
+        const check = shopping_cart.filter(singleData => singleData._id === data._id);
+        if (check) {
+            check[0] = data;
+            const remove = shopping_cart.filter(singleData => singleData._id !== data._id);
+            remove.push(check[0])
+            shopping_cart = remove;
+
         }
         else {
-            shopping_cart[id] = value;
+            shopping_cart.push(data);
         }
     }
     updateDb(shopping_cart);
+    console.log(JSON.parse(getDb()));
+
 }
 
 const getDb = () => localStorage.getItem('shopping_cart');
@@ -23,16 +33,8 @@ const updateDb = cart => {
     localStorage.setItem('shopping_cart', JSON.stringify(cart));
 }
 
-const removeFromDb = id => {
-    const exists = getDb();
-    if (!exists) {
-
-    }
-    else {
-        const shopping_cart = JSON.parse(exists);
-        delete shopping_cart[id];
-        updateDb(shopping_cart);
-    }
+const removeOrders = () => {
+    localStorage.removeItem('shopping_cart');
 }
 
 const getStoredCart = () => {
@@ -44,4 +46,4 @@ const clearTheCart = () => {
     localStorage.removeItem('shopping_cart');
 }
 
-export { addToDb, removeFromDb, clearTheCart, getStoredCart }
+export { addToDb, removeOrders, clearTheCart, getStoredCart }

@@ -5,5 +5,5 @@ body{
 .card-container{
   display: grid;
   grid-template-columns: repeat(3,1fr);
-  grid-gap: 150px;
+  grid-gap: 100px;
 }

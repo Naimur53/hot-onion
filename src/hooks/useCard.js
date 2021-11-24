@@ -7,7 +7,7 @@ const useCard = () => {
     const [loading, setLoading] = useState(true);
     useEffect(() => {
         setLoading(true);
-        fetch(`./fakeData.json`)
+        fetch(`https://frozen-woodland-58819.herokuapp.com/products`)
             .then(res => res.json())
             .then(result => {
                 setData(result);

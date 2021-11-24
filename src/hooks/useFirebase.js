@@ -6,17 +6,19 @@ initializeAppAuthetication();
 
 const useFirebase = () => {
     const [user, setUser] = useState({});
+    const [updateCart, setUpdateCart] = useState(0);
+    const [loading, setLoading] = useState(true);
     const auth = getAuth();
     const googleProvider = new GoogleAuthProvider();
 
-    const googleSignIn = () => {
+    const googleSignIn = (location, navigate) => {
         console.log('hi');
         signInWithPopup(auth, googleProvider)
             .then(result => {
                 const user = result.user;
                 console.log("hi");
                 setUser(user);
-
+                navigate(location.state?.from.pathname || '/');
             })
             .catch(error => {
                 console.log(error.message);
@@ -49,10 +51,12 @@ const useFirebase = () => {
             });
     }
     useEffect(() => {
+        setLoading(true);
         onAuthStateChanged(auth, (user) => {
             if (user) {
                 setUser(user);
             }
+            setLoading(false);
         });
     }, []);
 
@@ -71,7 +75,10 @@ const useFirebase = () => {
         handleSignOut,
         googleSignIn,
         signUpWithEmail,
-        logInWithEmail
+        logInWithEmail,
+        updateCart,
+        setUpdateCart,
+        loading
     };
 };
 

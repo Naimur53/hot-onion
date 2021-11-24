@@ -1,13 +1,13 @@
 import React from 'react';
 import './SingleCart.css'
-import { useHistory } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const SingleCart = props => {
-    const { id, img, price, name, description } = props.data;
-    let history = useHistory();
+    const { _id, img, price, name, description } = props.data;
+    let navigate = useNavigate();
     const handleCardClick = e => {
         e.stopPropagation();
-        history.push(`/${id}`);
+        navigate(`/home/${_id}`);
         console.log('call');
     }
     return (

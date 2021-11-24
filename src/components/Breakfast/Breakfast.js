@@ -1,15 +1,13 @@
 import React from 'react';
-import useCard from '../../hooks/useCard';
 import SingleCart from '../SingleCart/SingleCart';
 import Skeleton from '@mui/material/Skeleton';
 import CheckoutBtn from '../CheckoutBtn/CheckoutBtn';
 
-const Breakfast = () => {
-    const { data, loading } = useCard();
+const Breakfast = (props) => {
+    const { loading, data } = props.info;
     return (
-        <div className='container text-center'>
+        <div data-aos="fade-up" className='container text-center'>
             <div className="card-container">
-
                 {
                     loading ? Array.from({ length: 6 }).map((_, idx) => (
                         <div key={idx}>

@@ -3,9 +3,16 @@ import { useForm } from 'react-hook-form';
 import "./Login.css";
 import logo2 from '../../images/logo2.png';
 import useAuth from '../../hooks/useAuth.';
+import { Nav } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
+import { useLocation, useNavigate } from 'react-router';
 
 const Login = () => {
-    const { logInWithEmail } = useAuth();
+    const { logInWithEmail, googleSignIn } = useAuth();
+    const location = useLocation();
+    const navigate = useNavigate();
+
+    console.log(location);
     const onSubmit = e => {
         logInWithEmail(e);
     }
@@ -27,6 +34,12 @@ const Login = () => {
                     <br />
                     <input className='btn btn-danger mt-4 ps-2 py-2 border-0 w-100 text-white' type="submit" value='Sign in' />
                 </form>
+                <div className='text-center mt-4'>
+                    <button onClick={() => googleSignIn(location, navigate)} className="text-danger outline-0 btn btn-transparent">Sign in with google</button>
+                    <br />
+                    <Nav.Link as={HashLink} to="/login" className="text-danger btn ">already have a account?</Nav.Link>
+
+                </div>
             </div>
         </div>
     );
